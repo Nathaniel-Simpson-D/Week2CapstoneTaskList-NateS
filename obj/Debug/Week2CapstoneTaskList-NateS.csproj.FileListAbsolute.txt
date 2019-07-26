@@ -1,0 +1,7 @@
+C:\Clabs\Week2CapstoneTaskList-NateS\bin\Debug\Week2CapstoneTaskList-NateS.exe.config
+C:\Clabs\Week2CapstoneTaskList-NateS\bin\Debug\Week2CapstoneTaskList-NateS.exe
+C:\Clabs\Week2CapstoneTaskList-NateS\bin\Debug\Week2CapstoneTaskList-NateS.pdb
+C:\Clabs\Week2CapstoneTaskList-NateS\obj\Debug\Week2CapstoneTaskList-NateS.csprojAssemblyReference.cache
+C:\Clabs\Week2CapstoneTaskList-NateS\obj\Debug\Week2CapstoneTaskList-NateS.csproj.CoreCompileInputs.cache
+C:\Clabs\Week2CapstoneTaskList-NateS\obj\Debug\Week2CapstoneTaskList-NateS.exe
+C:\Clabs\Week2CapstoneTaskList-NateS\obj\Debug\Week2CapstoneTaskList-NateS.pdb
