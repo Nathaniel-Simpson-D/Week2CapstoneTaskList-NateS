@@ -19,10 +19,7 @@ namespace Week2CapstoneTaskList_NateS
         {
 
         }
-        public Validator(string message)
-        {
-
-        }
+        
         public static double ValidateDouble(string message)
         {
             Console.WriteLine(message);
@@ -127,6 +124,27 @@ namespace Week2CapstoneTaskList_NateS
             Console.WriteLine("press ESC to exit");
             while (Console.ReadKey(true).Key != ConsoleKey.Escape)
             { }
+        }
+        public static bool VerifyPassword(string gateWord)
+        {
+            System.Console.Write("Enter password: ");
+            string password = null;
+            while (true)
+            {
+                System.ConsoleKeyInfo input = System.Console.ReadKey(true);
+                if (input.Key == ConsoleKey.Enter)
+                    break;
+                password += input.KeyChar;
+                Console.Write("X");
+            }
+            if (gateWord.Equals(password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         #endregion
     }

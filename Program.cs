@@ -8,7 +8,7 @@ namespace Week2CapstoneTaskList_NateS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
 
@@ -19,10 +19,7 @@ namespace Week2CapstoneTaskList_NateS
             Console.WriteLine();
             while(pass)
             {
-                if (password == Validator.GetString("Please enter the password."))
-                {
-                    pass = false;
-                }
+                pass = !(Validator.VerifyPassword(password));
             }
             Console.Clear();
             Console.WriteLine("Welcome to out Task Board.");
@@ -83,9 +80,9 @@ namespace Week2CapstoneTaskList_NateS
             for (int i = 0; i < tasks.Count; i++)
             {
                 Console.WriteLine($"{i + 1}) {tasks[i].TaskName}: assigned to {tasks[i].MemberName}");
-                Console.WriteLine($"{tasks[i].Discription,10}");
-                Console.WriteLine($"          Status: {tasks[i].Status()}");
-                Console.WriteLine($"          Due: {tasks[i].DueDate}");
+                Console.WriteLine($"    {tasks[i].Discription,10}");
+                Console.WriteLine($"    Status: {tasks[i].Status()}");
+                Console.WriteLine($"    Due: {tasks[i].DueDate}");
             }
         }
         public static List<Task> AddTask(List<Task> tasks)
