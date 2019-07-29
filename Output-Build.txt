@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: Week2CapstoneTaskList-NateS, Configuration: Debug Any CPU ------
+1>  Week2CapstoneTaskList-NateS -> C:\Clabs\Week2CapstoneTaskList-NateS\bin\Debug\Week2CapstoneTaskList-NateS.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

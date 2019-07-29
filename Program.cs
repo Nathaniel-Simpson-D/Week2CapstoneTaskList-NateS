@@ -68,12 +68,21 @@ namespace Week2CapstoneTaskList_NateS
                 }
                 else if (choice == 6)
                 {
-                    break;
+                    bool confirm = Validator.GetYN("Are you sure?");
+                    if (confirm)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                    }
                 }
                 
             }
             Console.Clear();
             Validator.EndProgram("Goodbye.");
+
         }
         public static void PrintTasks(List<Task> tasks)
         {

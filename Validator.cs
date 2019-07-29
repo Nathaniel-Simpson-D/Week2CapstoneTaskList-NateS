@@ -82,7 +82,7 @@ namespace Week2CapstoneTaskList_NateS
             Console.WriteLine(message);
             Console.WriteLine("Format as DD/MM/YYYY");
             string inputS = Console.ReadLine();
-            if (Regex.IsMatch(inputS, @"^((\d{2})\/(\d{2})\/(\d{4}))$"))
+            if (Regex.IsMatch(inputS, @"^((\d{2})\/(\d{2})\/(\d{2,4}))$"))
             {
                 return inputS;
             }
@@ -124,19 +124,37 @@ namespace Week2CapstoneTaskList_NateS
             Console.WriteLine("press ESC to exit");
             while (Console.ReadKey(true).Key != ConsoleKey.Escape)
             { }
+            System.Environment.Exit(0); //closes program
         }
         public static bool VerifyPassword(string gateWord)
         {
+            Console.WriteLine("Press enter to submit password, pressing ESC will close program.");
             System.Console.Write("Enter password: ");
             string password = null;
             while (true)
             {
                 System.ConsoleKeyInfo input = System.Console.ReadKey(true);
                 if (input.Key == ConsoleKey.Enter)
+                {
                     break;
-                password += input.KeyChar;
-                Console.Write("X");
+                }
+                else if (input.Key == ConsoleKey.Escape)
+                {
+                    System.Environment.Exit(0);
+                }
+                else if (input.Key == ConsoleKey.Backspace)
+                {
+                   password = password.Remove(password.Length - 1);
+                    Console.Write("\b \b");
+                    
+                }
+                else
+                {
+                    password += input.KeyChar;
+                    Console.Write("X");
+                }
             }
+            Console.WriteLine("");
             if (gateWord.Equals(password))
             {
                 return true;
